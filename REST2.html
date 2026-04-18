@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hazel Brown FoodieHub – Restaurant & Menu Showcase</title>
+
+<style>
+  {
+    margin: 55px;
+    padding: 33px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-image: url("https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background: rgba(255, 112, 67, 3.9);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 3px 3px 10px rgba(255, 112, 67, 3.9);
+}
+
+nav {
+    background: rgba(255, 112, 67, 3.9);
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 3px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 3.3s;
+}
+
+nav a: hover {
+    color: #ff7043;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.95);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 1.3s;
+}
+
+section: hover {
+    transform: scale(1.01);
+}
+
+h2 {
+    color: #ff7043;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 15px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff7043;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #ffe5dc;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    background: rgba (255, 255, 255, 0.95);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.food-card {
+    background-color: white;
+    border: 2px solid #ff5733;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 5px;
+    transition: 3.3s;
+}
+
+.food-card:hover {
+    transform:scale(1.05);
+    box-shadow: 3px 5px 15px rgba(255, 255, 255, 3.95);
+}
+
+.food-card h2 {
+    color: #ff5733;
+}
+
+.food-card p {
+    color: #444;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to Hazel Brown FoodieHub</h1>
+    <p>Your Ultimate Restaurant & Menu Showcase</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#restaurants">Restaurants</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About FoodieHub</h2>
+    <p>
+        FoodieHub is a comprehensive restaurant and menu showcase platform designed to help users discover 
+        exceptional dining experiences.
+    </p>
+</section>
+
+<section id="restaurants">
+    <h2>Featured Restaurants</h2>
+    <ul>
+        <li>Spice Garden</li>
+        <li>Urban Tandoor</li>
+        <li>Coastal Flavors</li>
+        <li>Green Leaf Bistro</li>
+        <li>Sweet Treats Café</li>
+    </ul>
+</section>
+
+<section id="menu">
+    <h2>Explore Our Menu</h2>
+
+    <!--  NEW CARD GRID -->
+    <div class="container">
+        <div class="card-grid">
+
+            <div class="food-card">
+                <h2>Chef Special</h2>
+                <p>Butter Chicken with soft naan – rich and creamy delight.</p>
+            </div>
+
+            <div class="food-card">
+                <h2>Popular Choice</h2>
+                <p>Chicken 65 – crispy, spicy, and a crowd favorite.</p>
+            </div>
+
+            <div class="food-card">
+                <h2>Healthy Pick</h2>
+                <p>Mixed Vegetable Curry – nutritious and tasty.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <h3>Starters</h3>
+    <table>
+        <tr><th>Item</th><th>Price (₹)</th></tr>
+        <tr><td>Paneer Tikka</td><td>190</td></tr>
+        <tr><td>Gobi Manchurian</td><td>180</td></tr>
+        <tr><td>Chicken 65</td><td>210</td></tr>
+        <tr><td>Vegetable Spring Rolls</td><td>150</td></tr>
+    </table>
+
+    <h3>Main Course</h3>
+    <table>
+        <tr><th>Item</th><th>Price (₹)</th></tr>
+        <tr><td>Butter Chicken</td><td>220</td></tr>
+        <tr><td>Veg Biryani</td><td>200</td></tr>
+        <tr><td>Paneer Butter Masala</td><td>180</td></tr>
+    </table>
+
+    <h3>Desserts</h3>
+    <table>
+        <tr><th>Item</th><th>Price (₹)</th></tr>
+        <tr><td>Gulab Jamun</td><td>50</td></tr>
+        <tr><td>Ice Cream</td><td>80</td></tr>
+        <tr><td>Chocolate Brownie</td><td>100</td></tr>
+        <tr><td>Cheesecake</td><td>120</td></tr>
+        <tr><td>Fruit Salad</td><td>90</td></tr>
+        <tr><td>Caramel Custard</td><td>60</td></tr>
+    </table>
+
+    <h3>Beverages</h3>
+    <table>
+        <tr><th>Item</th><th>Price (₹)</th></tr>
+        <tr><td>Fresh Lime Soda</td><td>40</td></tr>
+        <tr><td>Milkshakes</td><td>80</td></tr>
+        <tr><td>Mocktails</td><td>100</td></tr>
+        <tr><td>Cold / Hot Coffee</td><td>50</td></tr>
+        <tr><td>Tea</td><td>20</td></tr>
+        <tr><td>Fresh Fruit Juices</td><td>50</td></tr>
+        <tr><td>Soft Drinks / Mineral Water</td><td>40 - 60</td></tr>
+    </table>
+
+
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hazelbrown@foodiehub.com</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+    <p>FoodieHub © 2026 | Taste the Best</p>
+</footer>
+
+</body>
+</html>
